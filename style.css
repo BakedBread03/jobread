@@ -1,8 +1,9 @@
-body {
+html, body {
+  height: 100%;
   font-family: 'Roboto', sans-serif; /* Ensures the whole page uses the same font */
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Section Style */
@@ -28,7 +29,7 @@ footer {
   font-family: 'Roboto', sans-serif; /* Ensures same font as body */
   text-transform: lowercase; /* Makes everything lowercase first */
   font-variant: small-caps;  /* Applies small caps to lowercase */
-  font-size: 1.1rem;
+  font-size: 0.6rem;
   text-align: center;
   margin-top: 20px;
 }
