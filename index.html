@@ -37,14 +37,14 @@
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Use modern navigation timing
-    window.addEventListener('load', () => {
-      const [nav] = performance.getEntriesByType('navigation');
-      if (nav) {
-        const loadTime = nav.loadEventEnd / 1000;
-        document.getElementById('load-time').textContent = loadTime.toFixed(3);
-      } else {
-        document.getElementById('load-time').textContent = '0.000';
+  window.addEventListener('load', () => {
+    const [nav] = performance.getEntriesByType('navigation');
+    if (nav) {
+      const loadTime = (nav.loadEventEnd - nav.loadEventStart) / 1000;
+      document.getElementById('load-time').textContent = loadTime.toFixed(3);
+    } else {
+      document.getElementById('load-time').textContent = '0.000';
+    }
       }
     });
   </script>
