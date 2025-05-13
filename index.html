@@ -5,29 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test Load Time</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header section */
+    header {
+      background-color: #1E3A8A; /* Blue background */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      height: 33vh; /* Takes up the top third of the viewport */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer span {
+      font-size: 1.1rem;
+    }
+
+    /* Optional: Style for the rest of the page */
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+  </style>
 </head>
 <body>
 
-  <h1>Hello, world! This page is being tested for load time.</h1>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>This is where I’ll introduce myself, my work, and my projects.</p>
+  </header>
 
-  <img src="https://via.placeholder.com/1500x1000" alt="Large Image 1">
-  <img src="https://via.placeholder.com/1500x1000" alt="Large Image 2">
-  <img src="https://via.placeholder.com/1500x1000" alt="Large Image 3">
+  <!-- Content Section -->
+  <div class="content">
+    <h2>Explore my site!</h2>
+    <p>More content will be added here as I expand my website.</p>
+  </div>
 
-  <video width="320" height="240" controls>
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <script>
-    // Heavy processing to delay the page load
-    for (let i = 0; i < 1000000; i++) {
-      Math.sqrt(i);
-    }
-  </script>
-
+  <!-- Footer Section -->
   <footer>
-    Design and code © 2024–<span id="year"></span> John M. Brenner &bull; 
+    Design and code © 2025–<span id="year"></span> John M. Brenner &bull; 
     Made with HTML, CSS, and enhanced with JavaScript. Hosted on GitHub Pages.<br>
     This page loaded in <span id="load-time">...</span> seconds.
   </footer>
@@ -47,4 +84,4 @@
   </script>
 
 </body>
-</html
+</html>
