@@ -4,49 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test Load Time</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Header section */
-    header {
-      background-color: #1E3A8A; /* Blue background */
-      color: white;
-      padding: 20px;
-      text-align: center;
-      height: 33vh; /* Takes up the top third of the viewport */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    footer span {
-      font-size: 1.1rem;
-    }
-
-    /* Optional: Style for the rest of the page */
-    .content {
-      padding: 20px;
-      text-align: center;
-    }
-
-  </style>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -70,7 +29,7 @@
   </footer>
 
   <script>
-    // Set current year
+    // Set current year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Use performance.timing for accurate load time
