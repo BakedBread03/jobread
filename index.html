@@ -10,5 +10,14 @@
   <h1>Hello, world!</h1>
   <p>This is my awesome website 🚀</p>
   <script src="script.js"></script>
+  <footer style="font-size: 0.9em; color: #666; text-align: center; margin-top: 4rem;">
+  Design and code © 2024–2025 John M. Brenner &bull; Made with HTML, CSS, enhanced with JavaScript.<br>
+  This page loaded in <span id="load-time">0.000</span> seconds.
+</footer>
+
+<script>
+  const loadTime = (performance.timing.loadEventEnd - performance.timing.navigationStart) / 1000;
+  document.getElementById('load-time').textContent = loadTime.toFixed(3);
+</script>
 </body>
 </html>
