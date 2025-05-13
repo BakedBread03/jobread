@@ -1,7 +1,37 @@
-body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header section (optional if you have one already) */
+header {
+  background-color: #004080;
+  color: white;
   text-align: center;
-  margin-top: 5rem;
+  padding: 40px 20px;
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer pinned to bottom if content is short */
+footer {
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 20px;
+}
+footer span {
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 0.6rem;
 }
