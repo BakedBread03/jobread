@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome!</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John M. Brenner</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    footer {
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my awesome website 🚀</p>
-  <script src="script.js"></script>
-  <footer style="font-size: 0.9em; color: #666; text-align: center; margin-top: 4rem;">
-  Design and code © 2025 John M. Brenner &bull; Made with HTML, CSS, enhanced with JavaScript. Hosted on Github Pages.<br>
-  This page loaded in <span id="load-time">0.000</span> seconds.
-</footer>
 
-<script>
-  const loadTime = (performance.timing.loadEventEnd - performance.timing.navigationStart) / 1000;
-  document.getElementById('load-time').textContent = loadTime.toFixed(3);
-</script>
+  <h1>Hello, world!</h1>
+  <p>This is my personal website.</p>
+
+  <footer>
+    Design and code © 2025–<span id="year"></span> John M. Brenner &bull; 
+    Made with HTML, CSS, and enhanced with JavaScript. Hosted on GitHub Pages.<br>
+    This page loaded in <span id="load-time">...</span> seconds.
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Use modern navigation timing
+    window.addEventListener('load', () => {
+      const [nav] = performance.getEntriesByType('navigation');
+      if (nav) {
+        const loadTime = nav.loadEventEnd / 1000;
+        document.getElementById('load-time').textContent = loadTime.toFixed(3);
+      } else {
+        document.getElementById('load-time').textContent = '0.000';
+      }
+    });
+  </script>
+
 </body>
 </html>
