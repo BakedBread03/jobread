@@ -28,7 +28,7 @@
   <p>This is my personal website.</p>
 
   <footer>
-    Design and code © 2025–<span id="year"></span> John M. Brenner &bull; 
+    Design and code © 2024–<span id="year"></span> John M. Brenner &bull; 
     Made with HTML, CSS, and enhanced with JavaScript. Hosted on GitHub Pages.<br>
     This page loaded in <span id="load-time">...</span> seconds.
   </footer>
@@ -37,15 +37,19 @@
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-  window.addEventListener('load', () => {
-    const [nav] = performance.getEntriesByType('navigation');
-    if (nav) {
-      const loadTime = (nav.loadEventEnd - nav.loadEventStart) / 1000;
-      document.getElementById('load-time').textContent = loadTime.toFixed(3);
-    } else {
-      document.getElementById('load-time').textContent = '0.000';
-    }
-      }
+    // Use modern navigation timing
+    window.addEventListener('load', () => {
+      // Wait a bit to ensure timing data is available
+      setTimeout(() => {
+        const [nav] = performance.getEntriesByType('navigation');
+        if (nav) {
+          // Calculate load time based on navigation events
+          const loadTime = (nav.loadEventEnd - nav.loadEventStart) / 1000;
+          document.getElementById('load-time').textContent = loadTime.toFixed(3);
+        } else {
+          document.getElementById('load-time').textContent = '0.000';
+        }
+      }, 500);  // Delay the calculation slightly (500ms)
     });
   </script>
 
