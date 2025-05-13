@@ -20,8 +20,9 @@
   </video>
 
   <script>
+    // Heavy processing to delay the page load
     for (let i = 0; i < 1000000; i++) {
-      Math.sqrt(i); // Heavy processing to delay the page load
+      Math.sqrt(i);
     }
   </script>
 
@@ -35,21 +36,15 @@
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Use modern navigation timing
+    // Use performance.timing for accurate load time
     window.addEventListener('load', () => {
-      // Wait a bit to ensure timing data is available
       setTimeout(() => {
-        const [nav] = performance.getEntriesByType('navigation');
-        if (nav) {
-          // Calculate load time based on navigation events
-          const loadTime = (nav.loadEventEnd - nav.loadEventStart) / 1000;
-          document.getElementById('load-time').textContent = loadTime.toFixed(3);
-        } else {
-          document.getElementById('load-time').textContent = '0.000';
-        }
-      }, 500);  // Delay the calculation slightly (500ms)
+        const timing = window.performance.timing;
+        const pageLoadTime = (timing.loadEventEnd - timing.navigationStart) / 1000;
+        document.getElementById('load-time').textContent = pageLoadTime.toFixed(3);
+      }, 500); // Delay to ensure all resources are accounted for
     });
   </script>
 
 </body>
-</html>
+</html
