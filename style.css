@@ -35,7 +35,10 @@ footer {
 }
 
 footer span {
-  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 0.6rem;
 }
 
 /* Optional Content Section Style */
