@@ -34,8 +34,12 @@ body{
   text-align: center;
 }
  footer {
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 0.8rem;
   text-align: center;
-  margin-top: 40px; /* Or any other spacing */
-  border-top: 1px solid #ccc; /* Thin horizontal line */
-  padding-top: 10px; /* Space between line and text */
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
 }
