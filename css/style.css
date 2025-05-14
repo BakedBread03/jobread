@@ -4,6 +4,7 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 /* Header section (optional if you have one already) */
