@@ -37,12 +37,10 @@ body{
   font-family: 'Roboto', sans-serif;
   text-transform: lowercase;
   font-variant: small-caps;
+  font-variant-numeric: lining-nums;
   font-size: 0.8rem;
   text-align: center;
   margin-top: 40px;
   border-top: 1px solid #ccc;
   padding-top: 10px;
-  font-feature-settings: "lnum" 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
