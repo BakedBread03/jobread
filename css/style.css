@@ -12,6 +12,7 @@ header {
   color: #680000;
   text-align: center;
   padding: 40px 20px;
+  height: 50vh; /* or min-height: 40vh; for more flexibility */
 }
 
 /* Main content grows to fill space */
