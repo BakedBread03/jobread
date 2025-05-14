@@ -33,5 +33,9 @@ body{
   flex-direction: column;
   text-align: center;
 }
-  font-size: 0.8rem;
+ footer {
+  text-align: center;
+  margin-top: 40px; /* Or any other spacing */
+  border-top: 1px solid #ccc; /* Thin horizontal line */
+  padding-top: 10px; /* Space between line and text */
 }
