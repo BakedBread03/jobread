@@ -34,6 +34,7 @@ body{
   text-align: center;
 }
  footer {
+  font-feature-settings: "lnum";
   font-family: 'Roboto', sans-serif;
   text-transform: lowercase;
   font-variant: small-caps;
