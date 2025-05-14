@@ -12,7 +12,7 @@ header {
   color: white;
   text-align: center;
   padding: 40px 20px;
-  height: 50vh; /* or min-height: 40vh; for more flexibility */
+  min-height: 50vh;
 }
 
 /* Main content grows to fill space */
