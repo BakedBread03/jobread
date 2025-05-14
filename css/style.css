@@ -33,23 +33,5 @@ body{
   flex-direction: column;
   text-align: center;
 }
-
-
-/* Footer pinned to bottom if content is short */
-footer {
-  font-family: 'Roboto', sans-serif;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  font-size: 0.7rem;
-  text-align: center;
-  margin-top: 20px;
-  border-top: 1px solid #ccc; /* Thin horizontal line */
-  padding-top: 10px;          /* Space between line and text */
-  margin-top: 40px;           /* Space above the line */
-}
-footer span.footer-date {
-  font-family: 'Roboto', sans-serif;
-  text-transform: lowercase;
-  font-variant: small-caps;
   font-size: 0.8rem;
 }
