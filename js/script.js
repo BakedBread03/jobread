@@ -1,17 +1,23 @@
 console.log("Welcome to your site!");
 const footer = document.querySelector("footer");
 
-// Handle the year and time
-const span = document.createElement("span");
-span.className = "footer-date";  // Add your class
+// Update the year if needed (or keep it dynamic)
+const footerYear = document.getElementById("footer-year");
+footerYear.textContent = `© ${new Date().getFullYear()}`;  // Keeps the year dynamic
+
+// Create a span for the time (if not already present)
+const timeSpan = document.createElement("span");
+timeSpan.className = "footer-date";  // Add your class
+
+// Update the content for the time
 const now = new Date();
-span.textContent = `-${now.getFullYear()} | ${now.toLocaleTimeString()}`;
+timeSpan.textContent = ` | ${now.toLocaleTimeString()}`;
 
 // Apply styles directly via JS
-span.style.fontFamily = "'Roboto', sans-serif";
-span.style.textTransform = "lowercase";
-span.style.fontVariant = "small-caps";
-span.style.fontSize = "0.8rem";
+timeSpan.style.fontFamily = "'Roboto', sans-serif";
+timeSpan.style.textTransform = "lowercase";
+timeSpan.style.fontVariant = "small-caps";
+timeSpan.style.fontSize = "0.8rem";
 
-// Append dynamically generated content
-footer.appendChild(span);
+// Append the time to the footer
+footer.appendChild(timeSpan);
