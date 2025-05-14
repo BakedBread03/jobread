@@ -45,3 +45,10 @@ body{
   border-top: 1px solid #ccc;
   padding-top: 10px;
 }
+.fix-numbers {
+  font-size: 0.6rem; /* match footer size explicitly */
+  font-family: 'Roboto', sans-serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: bold;
+}
