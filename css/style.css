@@ -35,3 +35,10 @@ body{
 }
   font-size: 0.8rem;
 }
+
+#footer-year {
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 0.8rem;
+}
