@@ -48,8 +48,10 @@ footer {
   margin-top: 40px;           /* Space above the line */
 }
 footer span {
-  font-family: 'Roboto', sans-serif;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  font-size: 0.7rem;
+  all: unset; /* removes any default styling */
+  font-family: 'Roboto', sans-serif !important;
+  text-transform: lowercase !important;
+  font-variant: small-caps !important;
+  font-size: 0.7rem !important;
+  display: inline; /* just in case */
 }
