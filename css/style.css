@@ -9,7 +9,7 @@ html, body {
 
 header {
   background-color: #001099;
-  color: #680000;
+  color: white;
   text-align: center;
   padding: 40px 20px;
   height: 50vh; /* or min-height: 40vh; for more flexibility */
