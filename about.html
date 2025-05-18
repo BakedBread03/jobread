@@ -5,25 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>John M. Brenner</title>
                                             <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="bread.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-	<li><a href="blog.html">Blog</a></li>
-	<li><a href="coaching.html">Coaching</a></li>
-  </ul>
-</nav>
 
   <!-- Header Section -->
-  <header>
-    <h1>Welcome to My Website</h1>
-    <p>This is where I’ll introduce myself, my work, and my projects.</p>
-  </header>
+ <header>
+  <div class="header-content">
+    <h1 id="about">John M. Brenner</h1>
+    <p class="subtitle">Aspiring AI Research Engineer</p>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="coaching.html">Coaching</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="theme-toggle">Dark Mode</button>
+</header>
+
+<!-- Move welcome section outside header -->
+<main>
+  <h2>Welcome to My Website</h2>
+  <p>This is where I’ll introduce myself, my work, and my projects.</p>
+</main>
 
   <!-- Content Section -->
   <div class="content">
@@ -51,6 +63,6 @@
       }, 500); // Delay to ensure all resources are accounted for
     });
   </script>
-
+  <script src="script.js"></script>
 </body>
 </html>

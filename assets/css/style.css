@@ -6,39 +6,64 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+#theme-toggle {
+  background-color: #0c0059; /* same blue as header */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 15px;
+  cursor: pointer;
+}
 
 header {
-  background-color: #091560;
+  background-color: #0c0059;   /* existing blue header color */
+  padding: 10px;
+}
+.header-content {
+  float: left;
   color: white;
-  text-align: center;
-  padding: 20px;
-  min-height: 40vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.header-content h1 {
+  margin: 0;
+  color: white;
+}
+.subtitle {
+  margin: 5px 0 0 0;
+  color: white;
+  font-size: 1.1em;
 }
 nav {
-  display: flex;
-  justify-content: flex-end; /* pushes nav links right */
-  padding: 20px 30px 0 0; /* top padding moves it down, right padding moves it right */
-  background-color: #0056b3; /* match header blue */
+  float: right;
+  margin-top: 20px; /* space below name */
 }
-
-nav a {
-  margin-left: 20px;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+}
+nav ul li a {
+  color: white;
   text-decoration: none;
-  color: white; /* white looks better on blue */
-  font-weight: 600;
+  font-weight: bold;
 }
-
-nav a:hover {
-  color: #ff6600; /* keep your hover orange */
+nav ul li a:hover {
+  text-decoration: underline;
 }
 /* Main content grows to fill space */
 main {
-  flex: 1;
   padding: 20px;
+  color: white;
+  background-color: #0c0059;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
 }
 
 body{
@@ -67,4 +92,22 @@ body{
   font-variant: small-caps;
   text-transform: lowercase;
   font-weight: bold;
+}
+
+body.dark-mode {
+  background-color: #111;  /* dark gray (avoid pure black for comfort) */
+  color: #eee;             /* light gray text */
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #0c0059; /* keep header/footer blue for consistency */
+}
+body.dark-mode main {
+  background-color: #222; /* darker main content */
+  color: #eee;            /* match body text */
+}
+
+body.dark-mode #theme-toggle {
+  background-color: #333; /* slightly different button in dark mode */
+  color: white;
 }
