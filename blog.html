@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John M. Brenner</title>
+                                            <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="bread.png" type="image/png">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+	<li><a href="blog.html">Blog</a></li>
+	<li><a href="coaching.html">Coaching</a></li>
+  </ul>
+</nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>This is where I’ll introduce myself, my work, and my projects.</p>
+  </header>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h2>Explore my site!</h2>
+    <p>More content will be added here as I expand my website.</p>
+  </div>
+
+  <!-- Footer Section -->
+<footer>
+  Design and code <span class="fix-numbers">© 2025–2025</span> John M. Brenner &bull;
+  Made with HTML, CSS, and enhanced with JavaScript. Hosted on GitHub Pages.<br>
+  This page loaded in <span class="fix-numbers">0.057</span> seconds.
+</footer>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Use performance.timing for accurate load time
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const timing = window.performance.timing;
+        const pageLoadTime = (timing.loadEventEnd - timing.navigationStart) / 1000;
+        document.getElementById('load-time').textContent = pageLoadTime.toFixed(3);
+      }, 500); // Delay to ensure all resources are accounted for
+    });
+  </script>
+
+</body>
+</html>

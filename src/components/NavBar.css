@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #222;         /* Dark background for contrast */
+  padding: 10px 20px;             /* Some breathing room */
+  display: flex;                  /* Horizontal layout */
+  gap: 20px;                     /* Space between links */
+}
+
+.navbar a {
+  color: #f0f0f0;                /* Light text */
+  text-decoration: none;          /* Remove underline */
+  font-weight: 600;               /* Slightly bold */
+  font-size: 18px;                /* Readable size */
+  transition: color 0.3s ease;   /* Smooth hover effect */
+}
+
+.navbar a:hover {
+  color: #00bfff;                /* Bright cyan on hover */
+}
+
+.navbar a.active {
+  color: #00bfff;                /* Highlight active link */
+  border-bottom: 2px solid #00bfff; /* Underline active link */
+}
