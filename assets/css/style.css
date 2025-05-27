@@ -16,7 +16,7 @@ html, body {
 }
 
 header {
-  background-color: #0c0059;   /* existing blue header color */
+  background-color: #030052;   /* existing blue header color */
   padding: 10px;
 }
 .header-content {
@@ -56,14 +56,15 @@ nav ul li a:hover {
 /* Main content grows to fill space */
 main {
   padding: 20px;
-  color: white;
-  background-color: #0c0059;
+  color: #a6002d;
+  background-color: #030052;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
   text-align: center;
+  font-size: 60px;
 }
 
 body{
@@ -100,7 +101,7 @@ body.dark-mode {
 }
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #0c0059; /* keep header/footer blue for consistency */
+  background-color: #030052; /* keep header/footer blue for consistency */
 }
 body.dark-mode main {
   background-color: #222; /* darker main content */
