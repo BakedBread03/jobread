@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John M. Brenner</title>
+                                            <!-- Link to external CSS file -->
+  <link rel="icon" href="bread.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+ <header>
+  <div class="header-content">
+    <h1 id="about">John M. Brenner</h1>
+    <p class="subtitle">Aspiring AI Research Engineer</p>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="coaching.html">Coaching</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="theme-toggle">Dark Mode</button>
+</header>
+
+<!-- Move welcome section outside header -->
+<main>
+  <h2>Welcome to My Website!</h2>
+  <p>Hi, I’m John Brenner — a Computer Science student at Arizona State University with a passion for artificial intelligence, cognitive science, and human-centered tech. I’m working toward my Bachelor’s by 2026, exploring the intersection of statistics and intelligent systems. I'm documenting my journey into AI and software development here as I learn, build, and grow.</p>
+</main>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h2>Explore my site!</h2>
+    <p>More content will be added here as I expand my website.</p>
+  </div>
+
+  <!-- Footer Section -->
+<footer>
+  Design and code <span class="fix-numbers">© 2025–2025</span> John M. Brenner &bull;
+  Made with HTML, CSS, and enhanced with JavaScript. Hosted on GitHub Pages.<br>
+  This page loaded in <span class="fix-numbers">0.057</span> seconds.
+</footer>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Use performance.timing for accurate load time
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const timing = window.performance.timing;
+        const pageLoadTime = (timing.loadEventEnd - timing.navigationStart) / 1000;
+        document.getElementById('load-time').textContent = pageLoadTime.toFixed(3);
+      }, 500); // Delay to ensure all resources are accounted for
+    });
+  </script>
+  <script src="script.js"></script>
+  <div id="external-links">
+    <a href="https://mastodon.social/@johnmbrenner" rel="me" target="_blank" rel="noopener noreferrer">@johnmbrenner</a>
+    <!-- more links -->
+  </div>
+</body>
+</html>

@@ -64,7 +64,11 @@ main {
   flex-direction: column;
   height: 100vh;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
+  max-height: 100vw;
+  overflow-y: auto;
+  overflow-wrap: break-word; /* ensures long words break properly */
+  word-wrap: break-word;
 }
 
 body{
