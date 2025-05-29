@@ -33,16 +33,26 @@
 </header>
 
 <!-- Move welcome section outside header -->
-<main>
-  <h2>Welcome to My Website!</h2>
-  <p>Hi, I’m John Brenner — a Computer Science student at Arizona State University with a passion for artificial intelligence, cognitive science, and human-centered tech. I’m working toward my Bachelor’s by 2026, exploring the intersection of statistics and intelligent systems. I'm documenting my journey into AI and software development here as I learn, build, and grow.</p>
-</main>
+<main style="max-height: 100px; height: auto;"></main> <!-- Keep the blue bar styling -->
 
-  <!-- Content Section -->
-  <div class="content">
-    <h2>Explore my site!</h2>
-    <p>More content will be added here as I expand my website.</p>
-  </div>
+<div class="content">
+    <h2>Articles</h2>
+
+  <article class="article-preview">
+    <a href="articles/time.html">
+      <img src="assets/images/time.jpg" alt="Clock and abstract time graphic" class="preview-img">
+    </a>
+    <h3><a href="articles/time.html">What Is Time?</a></h3>
+    <p class="excerpt">
+      Time governs our lives, yet few understand its nature. This article explores time as a concept, a measurement, and a philosophical mystery.
+    </p>
+    <a href="articles/time.html" class="continue-link">Continue reading →</a>
+  </article>
+
+  <!-- Add more articles following this format -->
+  <!-- Add more <article> blocks here -->
+</div>
+
 
   <!-- Footer Section -->
 <footer>
@@ -64,7 +74,7 @@
       }, 500); // Delay to ensure all resources are accounted for
     });
   </script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   <div id="external-links">
     <a href="https://mastodon.social/@johnmbrenner" rel="me" target="_blank" rel="noopener noreferrer">@johnmbrenner</a>
     <!-- more links -->
