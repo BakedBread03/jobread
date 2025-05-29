@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John M. Brenner</title>
+  <link rel="icon" href="time.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="time-page">
+  <header>
+    <div class="header-content">
+      <h1 id="title">John M. Brenner</h1>
+      <p class="subtitle">Aspiring AI Research Engineer</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#title">About</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle">Dark Mode</button>
+  </header>
+
+  <main class="main-bar"></main>
+
+  <div class="content">
+    <h2>Explore my site!</h2>
+    <p>More content will be added here as I expand my website.</p>
+  </div>
+  
+  <footer>
+    Design and code <span class="fix-numbers">© <span id="year">2025</span></span> John M. Brenner &bull;
+    Made with HTML, CSS, and enhanced with JavaScript. Hosted on GitHub Pages.<br />
+    This page loaded in <span id="load-time" class="fix-numbers">0.000</span> seconds.
+  </footer>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Use performance.timing for accurate load time
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const timing = window.performance.timing;
+        const pageLoadTime = (timing.loadEventEnd - timing.navigationStart) / 1000;
+        document.getElementById('load-time').textContent = pageLoadTime.toFixed(3);
+      }, 500);
+    });
+  </script>
+
+  <script src="..js/script.js"></script>
+
+  <div id="external-links">
+    <a
+      href="https://mastodon.social/@johnmbrenner"
+      rel="me noopener noreferrer"
+      target="_blank"
+      >@johnmbrenner</a
+    >
+    <!-- more links -->
+  </div>
+</body>
+</html>
