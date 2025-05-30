@@ -137,3 +137,13 @@ body.dark-mode #theme-toggle {
   font-family: Arial, sans-serif;
 }
 
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.article-body p {
+  margin-bottom: 1em;
+}
