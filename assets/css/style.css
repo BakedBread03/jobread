@@ -150,6 +150,19 @@ body.dark-mode #theme-toggle {
   line-height: 1.6;
 }
 
+.content p a {
+  color: #a6002d;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.content p a:hover {
+  color: #ff4c68;
+  text-decoration: underline;
+}
+
 .article-body p {
   margin-bottom: 1em;
 }
